@@ -1,0 +1,92 @@
+/*text color*/
+body{
+	color: #2D8C4E;
+}
+/*header*/
+#head-text{
+	background-color: #2D8C4E;
+	color: #FFF;
+}
+
+/*brand_head*/
+.brand_white{
+	width: 9%;
+	height: 9%;
+}
+/*header search*/
+#search{
+	margin-top: 28px;
+}
+
+/*jumbotron*/
+#head_jumbotron{
+	position: relative;
+	background-image:url(../image/1200x300-10764%20018_1.jpg);
+	position: relative;
+	background-repeat: no-repeat;
+	color: #FFF;
+}
+
+.head_jumbotron_bottom{
+	background-color: #2D8C4E;
+
+}
+/*index right_news_contact*/
+a:hover.list-group-item, button.list-group-item{
+    background-color: #dff0d8;
+}	
+.panel-success > .panel-heading {
+    color: #FFF;
+    background-color: #2D8C4E;
+}
+/*index right_nav navbar-nav color*/
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    color: #fff;
+    background-color: #2D8C4E;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    background-color: #88B36F;
+}
+
+/*linke_a_text_color*/
+a {
+    color: #2D8C4E;
+    text-decoration: none;
+}
+
+/*a:*/
+a:focus, a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+/*a.list*/
+a.list-group-item{
+	color: #2D8C4E;
+}
+/*endWall_style*/
+.endWall{
+	height: 280px;	
+	background-color: #F2F1EB;
+}
+.endWall_brand{
+	height: 94px;
+	background-color:  #2D8C4E;
+	color: #FFF;
+}
+
+/*brand&logo*/
+.brand{
+	width: 70%;
+	height: 70%;
+}
+.school_logo{
+	width: 70%;
+	height: 70%;
+}
+/*link_hover_color*/
+.link_hover_color a:hover{
+	color: #CEA052;
+}
+
