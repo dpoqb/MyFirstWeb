@@ -49,6 +49,11 @@ a:hover.list-group-item, button.list-group-item{
     background-color: #88B36F;
 }
 
+/*link visited*/
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background-color: #B7C7BD;
+    border-color: #337ab7;
+}
 /*linke_a_text_color*/
 a {
     color: #2D8C4E;
