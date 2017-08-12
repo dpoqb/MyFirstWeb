@@ -95,9 +95,13 @@ a.list-group-item:hover, button.list-group-item {
     text-indent: 35px;
 }
 .article-bg .well{
-    background-color: #FFF;
+    /*background-color: #FFF;*/
     text-indent: 35px;
 }
+.student_block .well{
+    background-color: #FFF;
+}
+
 .teac_info .table{
     margin-left: 30px;
 }
@@ -121,4 +125,26 @@ a.list-group-item:hover, button.list-group-item {
     font-size: 17.5px;
     margin: 0 0 20px;
     padding: 2px 5px;
+}
+
+.nav-make a {
+    width: 143px;
+}
+.nav-make ul li a{
+    padding: 0px;
+}
+.nav-list a:hover{
+    color: #fff;
+}
+/*active style*/
+.list-group-item.active{
+    z-index: 2;
+    color: #fff;
+    background-color: #2D8C4E;
+    border-color: #FFF;
+
+}
+.list-group-item.active:hover{
+    background-color: #88B36F;
+    border-color: #FFF
 }
