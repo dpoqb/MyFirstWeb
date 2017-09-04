@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Not Found</title>
+		<meta name="description" content="">
+		<meta name="author" content="Hakim El Hattab">
+		<meta name="viewport" content="width=460, user-scalable=no" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="btn">
+			<div class="btn-back">
+				<p>你想要返回到主页吗？</p>
+				<button class="yes">是</button>
+				<button class="no">否</button>
+			</div>
+			<div class="btn-front">404</div>
+		</div>
+
+		<p class="description">该模块正在努力开发中...</p>
+
+		<script src="script.js"></script>
+
+		<!-- Third party scripts and sharing UI -->
+		<div class="logo"><img src="../image/brand_1.png"></div>
+
+		<div class="credits">
+			<a href="">HOME</a>
+		</div>
+
+		<style type="text/css" media="screen">
+			.project-title {
+				position: absolute;
+				left: 25px;
+				bottom: 8px;
+				text-align: center;
+				font-size: 16px;
+				color: #444;
+			}
+			.logo{
+				text-align: center;
+			}
+			.logo img{
+					width: 50%;
+				}
+			.credits {
+				position: absolute;
+				right: 20px;
+				bottom: 25px;
+				font-size: 15px;
+				z-index: 20;
+				color: #444;
+				vertical-align: middle;
+			}
+
+			.credits * + * {
+				margin-left: 15px;
+			}
+
+			.credits a {
+				padding: 8px 10px;
+				color: #444;
+				border: 2px solid #999;
+				text-decoration: none;
+			}
+
+			.credits a:hover {
+				border-color: #555;
+				color: #222;
+			}
+
+			@media screen and (max-width: 1040px) {
+				.project-title {
+					display: none;
+				}
+
+				.credits {
+					width: 100%;
+					left: 0;
+					right: auto;
+					bottom: 0;
+					padding: 30px 0;
+					background: #ddd;
+					text-align: center;
+				}
+
+				.credits a {
+					display: inline-block;
+					margin-top: 7px;
+					margin-bottom: 7px;
+				}
+			}
+		</style>
+
+		<script>
+			var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
+			(function(d, t) {
+			var g = d.createElement(t),
+			    s = d.getElementsByTagName(t)[0];
+			g.async = true;
+			g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g, s);
+			})(document, 'script');
+		</script>
+
+	</body>
+
+</html>
