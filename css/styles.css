@@ -18,18 +18,43 @@ body{
 	margin-top: 28px;
 }
 
-/*jumbotron*/
-#head_jumbotron{
-	position: relative;
-	background-image:url(../image/1200x300-10764%20018_1.jpg);
-	position: relative;
-	background-repeat: no-repeat;
-	color: #FFF;
+/*poster*/
+.page-banner__image {
+    text-align: center;
 }
-
-.head_jumbotron_bottom{
-	background-color: #2D8C4E;
-
+.page-banner__image img {
+    vertical-align: bottom;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    width: auto;
+    border: 0 none;
+}
+.page-banner__image + .section-title {
+	background: rgba(243, 241, 238, 0.55) none repeat scroll 0 0;
+    bottom: 0;
+    width: 100%;
+}
+/*section postion*/
+.section-title{
+    position: absolute;
+	margin-bottom: 193px
+}
+.section-title h4 {
+	color: #2e2d29;
+	padding: 0.2em 0.6em;
+    font-size: 19px;
+    line-height: 20px;
+    margin-left: 90px;
+}
+.page-banner{
+	margin-bottom: 60px;
+}
+/*contient-link*/
+.contient-link img{
+	width: 70%;
+	margin-left: 40px;
 }
 /*index right_news_contact*/
 a:hover.list-group-item, button.list-group-item{
