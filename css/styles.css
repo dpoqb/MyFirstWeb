@@ -135,7 +135,11 @@ a.list-group-item{
 	width: 70%;
 	height: 70%;
 }
-/*link_hover_color*/
+/*link_hover_color the one*/
 .link_hover_color a:hover{
 	color: #CEA052;
 }
+/*link_hover_color the two*/
+.link_hover_color_two a:hover{
+    color: #2D8C4E;   
+ }
