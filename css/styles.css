@@ -22,6 +22,9 @@ body{
 .page-banner{
 	margin-top: 0px;
 }
+.page-banner__image {
+    text-align: center;
+}
 .page-banner__image img {
     vertical-align: bottom;
 }
@@ -70,6 +73,30 @@ img {
 }
 .region {
     position: relative;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+    border: 0 none;
+}
+.page-banner__image + .section-title {
+	background: rgba(243, 241, 238, 0.55) none repeat scroll 0 0;
+    bottom: 0;
+    width: 100%;
+}
+/*section postion*/
+.section-title{
+    position: absolute;
+	margin-bottom: 193px
+}
+.section-title h4 {
+	color: #2e2d29;
+	padding: 0.2em 0.6em;
+    font-size: 19px;
+    line-height: 20px;
+    margin-left: 90px;
+}
+.page-banner{
+	margin-bottom: 60px;
 }
 /*contient-link*/
 .contient-link img{
@@ -140,6 +167,3 @@ a.list-group-item{
 	color: #CEA052;
 }
 /*link_hover_color the two*/
-.link_hover_color_two a:hover{
-    color: #2D8C4E;   
- }

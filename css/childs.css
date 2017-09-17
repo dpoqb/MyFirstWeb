@@ -177,6 +177,7 @@ a.list-group-item:hover, button.list-group-item {
 }
 .pager li > a:hover{
     background-color: #88B36F;
+<<<<<<< HEAD
 }
 
 /*contact form style*/
@@ -198,4 +199,6 @@ a.list-group-item:hover, button.list-group-item {
 }
 .portfolio-modal .modal-content{
     text-align: center; 
+=======
+>>>>>>> master
 }
