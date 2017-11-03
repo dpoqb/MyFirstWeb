@@ -1,4 +1,7 @@
 <?php
+include "check_admin_cookies.php";
+?>
+<?php
 	/** file: func.inc.php 函数库文件 */
 
 	include "fileupload.class.php";                            //导入文件上传类FileUpload所在文件

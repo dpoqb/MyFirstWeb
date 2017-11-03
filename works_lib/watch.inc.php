@@ -1,6 +1,8 @@
-
+<?php
+include "check_admin_cookies.php";
+?>
 <?php //file:用于查看论文的基本信息
-    include "connc.php";
+    include "connc.admin.php";
     /* 通过ID查找指定的一行记录 */
     $sql = "SELECT id, article_title, first_author_name, second_author_name, periodical, abstract ,key_words, ptime, pdf,upload_time FROM 
                 literatures WHERE id='{$_GET["id"]}'";
@@ -24,6 +26,9 @@
                             <blockquote><h4><?php echo $article_title?></h4></blockquote>
                             <hr>
                                 <p><b class="text-success">摘要:</b><section style="text-indent:25px "><?php echo $abstract?></section></p>
+                            <ul class="list-inline item-details">
+                                    <li><b class="text-success">关键词：</b><?php echo $key_words?></li>
+                            </ul>
                             <ul class="list-inline item-details">
                                 <li><b class="text-success">第一作者:</b>
                                     <?php echo $first_author_name?>&nbsp;&nbsp;

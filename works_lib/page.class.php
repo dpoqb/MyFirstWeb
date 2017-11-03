@@ -1,4 +1,7 @@
 <?php
+include "check_admin_cookies.php";
+?>
+<?php
 	/**
 		file: page.class.php 
 		完美分页类 Page 

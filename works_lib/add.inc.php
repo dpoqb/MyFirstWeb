@@ -1,3 +1,6 @@
+<?php
+include "check_admin_cookies.php";
+?>
 <?php /**file:add.inc.php 添加新的文献数据*/?>
 <html>
 <head>

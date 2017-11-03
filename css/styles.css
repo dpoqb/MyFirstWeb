@@ -17,8 +17,6 @@ body{
 #search{
 	margin-top: 28px;
 }
-
-/*poster*/
 .page-banner{
 	margin-top: 0px;
 }
@@ -43,7 +41,7 @@ img {
     bottom: 0;
     width: 100%;
     background: #f3f1ee;
-    background: rgba(45,140,78);
+    /*background: rgba(45,140,78);*/
 }
 .section-title {
     background: #f2f1eb;
@@ -97,6 +95,10 @@ img {
 }
 .page-banner{
 	margin-bottom: 60px;
+/*<<<<<<< HEAD*/
+/*=======*/
+/*>>>>>>> master*/
+/*>>>>>>> master*/
 }
 /*contient-link*/
 .contient-link img{
@@ -144,7 +146,7 @@ a.list-group-item{
 }
 /*endWall_style*/
 .endWall{
-	height: 280px;	
+	height: 280px;
 	background-color: #F2F1EB;
 }
 .endWall_brand{

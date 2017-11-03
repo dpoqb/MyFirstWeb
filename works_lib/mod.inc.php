@@ -1,6 +1,9 @@
-<?php 
+<?php
+include "check_admin_cookies.php";
+?>
+<?php
 	/** file: mod.inc.php 图书修改表单 */ 
-	include "connc.php";
+	include "connc.admin.php";
 	/* 通过ID查找指定的一行记录 */
 	$sql = "SELECT id, article_title, first_author_name, second_author_name, periodical, abstract ,key_words, ptime, pdf,upload_time FROM 
             literatures WHERE id='{$_GET["id"]}'";

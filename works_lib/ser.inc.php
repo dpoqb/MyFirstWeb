@@ -1,3 +1,6 @@
+<?php
+include "check_admin_cookies.php";
+?>
 <?php /**file:add.inc.php 添加新的文献数据*/?>
 <html>
 <head>
@@ -11,7 +14,7 @@
 
         <form enctype="multipart/form-data" action="index.php?action=list" method="POST" class="form-horizontal" role="form">
             <fieldset>
-                <legend>论文搜索</legend>
+                <legend>搜索论文</legend>
                 <div class="form-group">
                     <label for="article_title" class="col-md-2 control-label">论文标题：</label>
                         <div class="input-group col-md-8">

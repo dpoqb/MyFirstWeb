@@ -1,4 +1,7 @@
 <?php
+include "check_admin_cookies.php";
+?>
+<?php
 		/** file: list.inc.php 图书列表显示脚本，包括搜索加分页的功能 */
 		
 		/* 判断用户是通过表单POST提交，还是使用URL的GET提交,都将内容交给$ser处理 */
@@ -6,7 +9,8 @@
 		
         $where = array();            								 //声明WHERE从句的查询条件变量
         $param = "";               									 //声明分页参数的组合变量
-		$title = "";                 								 //声明本页的标题变量
+		$title = "";
+		//声明本页的标题变量
 		/* 处理用户搜索文献名称 */
         if(!empty($ser["article_title"])) {
             $where[] = "article_title like '%{$ser["article_title"]}%'";
@@ -62,7 +66,7 @@
     </tr>
     </thead>
 	<?php
-		include "connc.php";                              	//包含数据库连接文件，连接数据库
+		include "connc.admin.php";                              	//包含数据库连接文件，连接数据库
 		include "page.class.php";                               //包含分页类文件，加数据分页功能
 		
 		$sql = "SELECT count(*) FROM literatures {$where}";           //按条件获取数据表记录总数
@@ -91,9 +95,9 @@
                 echo '<td>'.$periodical.'</td>';
                 echo '<td>'.$ptime.'</td>';
                 echo "<td><a href='../../pdf_uploads/$pdf'>$pdf</a></td>";
-                echo '<td><a href="index.php?action=mod&id='.$id.'"><span class="glyphicon glyphicon-edit" title="修改"></span></a>
-                         | <a onclick="return confirm(\'你确定要删除——《'.$article_title.'》吗?\')" href="index.php?action=del&id='.$id.'&pdf='.$pdf.'">
-                         <span class="glyphicon glyphicon-trash" title="删除"></span></a> | <a href="index.php?action=watch&id='.$id.'"><span class="glyphicon glyphicon-zoom-in" title="查看"></span></a></td>';
+                echo '<td><p><a href="index.php?action=mod&id='.$id.'"><span class="glyphicon glyphicon-edit" title="修改"></span></a></p>
+                      <p><a onclick="return confirm(\'你确定要删除——《'.$article_title.'》吗?\')" href="index.php?action=del&id='.$id.'&pdf='.$pdf.'">
+                         <span class="glyphicon glyphicon-trash" title="删除"></span></a></p><p><a href="index.php?action=watch&id='.$id.'"><span class="glyphicon glyphicon-zoom-in" title="查看"></span></a></p></td>';
 				echo '</tr>';
 			}
 			echo '<tr><td colspan="6">'.$page->fpage().'</td></tr>';
